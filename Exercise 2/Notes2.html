@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise 2 notes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h1>
+	  Basic JavaScript programming 2</h1>
+  <p>
+  Programming languages use different techniques to keep information and control the flow of the program itself.  Information inside a program can be broadly classed into static (or constant) information and variables.  There is a third class of information we won&#34;t deal with here which is data that comes from an external source like a database, or an XML file, or a network source.
+  </p>
+  <h2>Constants</h2>
+  <p>
+  Constants can be built in to a language, or you can define them yourself.  JavaScript doesn't have a standard definition for constants (i.e. information used in the program that you don't want to change).   In other programming languages it is possible to define something with a keyword (typically &quot;const&quot;) which means that if you try to change the value to something else, your program will generate an error.
+  </p>
+  <h2>Variables</h2>
+  <p>
+  Variables are values you expect will change during program execution.  You use variables as counters, as text output (called a &quot;string&quot;) or other specialised numbers (integers, double precision numbers, boolean values).  In our sample program we have two different variables (message and counter).  In this program, message is not modified, just output.  The counter variable is used to keep track of our while loop.
+  </p>
+  <h2>Control flow</h2>
+  <p>
+  The program, when running, starts at the top of the script.js file and continues downwards until it hits the &quot;while&quot; loop.  A while loop is a smaller piece of code which executes multiple times until some condition is achieved.  In this case, the condition is that the counter must always be less than the value of 10.  If the counter ever reaches 10, the while loop will not execute and the program will skip over the section inside the curly braces and continue down the page until there is no more code to run.  If we didn't set an achievable condition on the while loop, it will run until somebody stops the program externally or the computer is switched off. 
+  </p>
+  <p>There are quite a few different types of control flow in most programming languages although they are all of a few different useful types:
+  <h3>If-then-else conditions</h3><p>Used when you want to test for some condition and then conditionally do something once or not at all (or you can cascade an if statement).
+  <code>if (counter == 10) { ... } else { ... }</code></p>
+  <h3>while loops</h3><p>There is an example while loop in the script.js file</p>
+  <h3>for loops</h3><p>A for loop is a piece of code you wish to execute exactly N many times.  If you know ahead of time that your program should do something 5 times in a row (for example), you would use a for loop:
+  <code>
+	  for (var i=0; i &lt; 5; i++) { ... }
+  </code></p>
+  <h3>switch statements</h3><p>Usually used when you have some condition that has a discrete number of states and you need to do something different for each state.<code>switch (myvariable) { case &quot;booyah&quot;: ... break; case &quot;boohoo&quot;: ... break; }</code></p>
+  <h2>Keywords</h2>
+  <p>The conditional, control flow and variable declaration words (if, var, while etc) are all examples of keywords.  All programming languages have a set number of keywords which have special meaning for that programming language.  In JavaScript the terminology is &quot;reserved words&quot;</p>
+  <p><a href="http://www.w3schools.com/js/js_reserved.asp">JavaScript reserved words</a></p>
+  <p>You can&#34;t use reserved words as names for variables (it confuses the language parser).</p>
+  <h2>Exercises</h2>
+  <ol><li>Change the message variable to output something else</li>
+	  <li>Change the while loop to execute 20 times instead of 10</li>
+	  <li>Change the while loop to execute 20000 times instead of 20</li>
+	  <li>Change the while loop to a for loop with 20 iterations</li>
+	  <li>Change the code inside the if loop so it does something different when the counter equals 5.  Remember to use the curly braces.</li>
+	  <li>Use the debugger to step through your program</li>
+  </ol>
+</body>
+</html>
+

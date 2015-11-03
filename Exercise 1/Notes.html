@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercise 1 notes</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <h1>
+	  Basic JavaScript programming 1</h1>
+  <p>
+  All programming languages require a minimum structure in order to start working.  In this case, since we are using the Javascript system hiding inside your web browser, we need a little more structure to deliver the script so it can be executed.</p>
+  <p>In this case, the html file <a href="example1.html">example1.html</a>  contains just enough &quot;stuff&quot; (actually, &quot;syntax&quot;) to provide an environment where you can start programming:
+  </p>
+  <code>
+	  &lt;!DOCTYPE html&gt;</code>
+  <p>
+This file is a html file (that is, a HyperText Markup Language document).  HTML documents are a subset of a much larger group of documents called &quot;SGML&quot; documents (Standard Generalised Markup Language).  SGML (and the related XML, eXtensible Markup Language) are very important for a wide variety of problems in programming, but in this case we are using a specific kind of document to display HTML.  For completeness, we need to make sure the programs reading our document know we are expressing HTML, hence the doctype declaration.
+</p>
+<p>
+A markup language basically means that there are  things that are going to be displayed, intermixed with instructions on how they should be displayed.  The &quot;markup&quot; in this case is all contained within special code so that programs that display the SGML document know what they should do with it.
+</p>
+<p>
+The greater than &gt; and less than signs &lt; are important in any HTML document, they allow us to describe elements and make declarations in HTML. <code>&lt;!DOCTYPE html&gt;</code> is the instruction that says the programmers intention was to make something to be displayed in a web browser.
+	</p>
+	<code>
+		&lt;html lang="en"&gt;</code>
+	<p>
+This is the official start of the html code.  In this case we are also giving a hint that the language the document written in is English.
+</p>
+<code>  &lt;head&gt;</code>
+<p>The heading of the document contains housekeeping information and other meta information required for this particular document to function correctly.
+</p>
+<code>
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    </code>
+    <p>
+Different kinds of computer information can have different kinds of character encoding.  If you are working on a document with chinese characters in it, you need to tell the web browser to expect those characters encoded in a special way even if you can&#39;t type them directly.  In this case, even normal English letters need some mechanism to express how they are represented.  UTF-8 is a Unicode document using 8 bit code units.  It is hard to believe now, but 40 years ago it was a big deal to transfer documents from one kind of computer to another one simply because the character encodings were not standard between computer companies.
+</p>
+<code>
+	&lt;title&gt;title&lt;/title&gt;</code>
+<p>
+This is the title of the document which will get displayed in the tab you have the document open in.</p>
+<code>
+&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot;&gt;
+</code>
+<p>
+This is a link to another file in this directory which has style information in it.  To keep a HTML document clean do not to explicitly put style mixed up with content as it is too hard to maintain if you want to change the style of a whole website.  In this case, we changed the font colour of our paragraph to purple, if there were 100 pages we needed to change the font colour to pink, we just edit one file and everything will change.
+</p>
+<code>
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+    </code>
+    <p>
+This is a link to another type of document that contains Javascript code.  In most web pages, the Javascript code will run when it is loaded by the web browser.  Our Javascript has a single instruction which is to write something extra on the document that is not contained in the HTML.
+</p>
+<code>
+  &lt;&frasl;head&gt;
+  </code>
+  <p>
+The &frasl; modifier to the markup for means the heading section is finished.  All html elements must be terminated like that (not declarations though).
+</p>
+<code>
+	&lt;body&gt;<br/>
+	&lt;h1&gt;<br/>
+	I am a heading<br/>
+	&lt;&frasl;h1&gt;<br/>
+    &lt;p&gt;I am a paragraph&lt;&frasl;p&gt;<br/>
+    &lt;&frasl;body&gt;<br/>
+    &lt;&frasl;html&gt;<br/>
+</code>
+<p>
+The body section is the meat of the document, it contains all the content we want to display to our user.  h1 is a heading (meant to appear bigger), p is a normal paragraph.  HTML documents are structured just like a book, they have headings, tables, paragraphs, lists etc.
+</p>
+<p>
+HTML documents mostly ignore the line breaks that you put into them, they follow the structure defined by the headings and paragraphs.  HTML files are not &quot;what you see is what you get&quot;, they are a different kind of document to a Word document.
+</p>
+<h2>
+	Exercises:</h2>
+<ol>
+	<li>Change the title of the document to something better.</li>
+	<li>Change the style of the paragraph to black.</li>
+	<li>Add some new style for the h1 heading.</li>
+	<li>Edit the HTML document and put some blank space after &quot;I&quot; with the enter key.  What happens?  Why?</li>
+	<li>Change the message that is inserted by the javascript.</li>
+	<li>Right click on the browser and &quot;view source&quot;.</li>
+	<li>Go to &quot;More Tools..Developer Tools&quot; (or press Ctrl-Shift-I, or F12 in internet explorer)</li>
+</ol>
+
+Hey I thought you said we were learning Javascript, what gives?  Every program needs structure, that&#39;s what.
+</body>
+</html>
+
